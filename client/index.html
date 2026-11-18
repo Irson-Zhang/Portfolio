@@ -2,7 +2,7 @@
 <html lang="en" data-theme="dark">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
     <title>Irson | Full-Stack MERN Developer</title>
     <meta name="description" content="Irson's portfolio: full-stack web developer working across HTML, CSS, JavaScript, React, Node.js, Express and MongoDB." />
     <meta name="theme-color" content="#0b0d12" />
@@ -10,6 +10,14 @@
     <meta property="og:description" content="Fast, accessible web apps, from semantic HTML to production MERN stacks." />
     <meta property="og:type" content="website" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+
+    <!-- Installable app ("Add to Home Screen") -->
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="Irson" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
     <!-- Sets the theme before first paint to avoid a flash. External so it passes the server's CSP. -->
     <script src="/theme-init.js"></script>
   </head>

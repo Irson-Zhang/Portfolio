@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="t" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#8b97ff"/>
+      <stop offset="1" stop-color="#3ee0c5"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.72" cy="0.22" r="0.75">
+      <stop offset="0" stop-color="#8b97ff" stop-opacity="0.35"/>
+      <stop offset="0.55" stop-color="#3ee0c5" stop-opacity="0.08"/>
+      <stop offset="1" stop-color="#0b0d12" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <!-- Full-bleed square: iOS and Android apply their own rounded mask. -->
+  <rect width="512" height="512" fill="#0b0d12"/>
+  <rect width="512" height="512" fill="url(#glow)"/>
+  <!-- Mark kept inside the central 80% "safe zone" for maskable icons. -->
+  <text x="256" y="338" text-anchor="middle" font-family="ui-sans-serif, -apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="250" font-weight="800" letter-spacing="-12" fill="url(#t)">I.</text>
+</svg>

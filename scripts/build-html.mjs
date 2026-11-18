@@ -38,5 +38,11 @@ const leftovers = html.match(/(src|href)="\.?\/?(assets|theme-init|favicon)[^"]*
 if (leftovers) throw new Error(`Un-inlined references remain: ${leftovers.join(', ')}`);
 
 fs.writeFileSync(outFile, html);
+
+// App files for "Add to Home Screen" / install. They're used when the folder is
+// served (Vercel, Netlify, a local server); a double-clicked file simply ignores them.
+const APP_FILES = ['manifest.webmanifest', 'icon.svg', 'icon-192.png', 'icon-512.png', 'apple-touch-icon.png', 'sw.js'];
+for (const f of APP_FILES) fs.copyFileSync(path.join(tmp, f), path.join(root, 'html', f));
+
 fs.rmSync(tmp, { recursive: true, force: true });
 console.log(`\n✓ ${path.relative(root, outFile)} (${(Buffer.byteLength(html) / 1024).toFixed(0)} KB). Double-click it to open.`);
