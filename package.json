@@ -1,0 +1,19 @@
+{
+  "name": "irson-portfolio",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Irson's portfolio — a full MERN stack showcase (HTML, CSS, JavaScript, React, Node, Express, MongoDB).",
+  "workspaces": [
+    "client",
+    "server"
+  ],
+  "scripts": {
+    "dev": "concurrently -n server,client -c blue,magenta \"npm run dev -w server\" \"npm run dev -w client\"",
+    "build": "npm run build -w client",
+    "start": "NODE_ENV=production npm start -w server",
+    "seed": "npm run seed -w server"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}

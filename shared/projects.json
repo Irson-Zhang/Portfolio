@@ -1,0 +1,68 @@
+[
+  {
+    "slug": "mern-commerce",
+    "title": "MERN Commerce",
+    "description": "Full-stack store with JWT auth, cart, Stripe checkout, an admin dashboard and image uploads. REST API built with Express and Mongoose.",
+    "category": "fullstack",
+    "glyph": "MERN",
+    "tags": ["MongoDB", "Express", "React", "Node.js", "JWT", "Stripe"],
+    "year": 2026,
+    "featured": true,
+    "links": { "live": "", "repo": "" }
+  },
+  {
+    "slug": "realtime-chat",
+    "title": "Realtime Chat",
+    "description": "Chat app with rooms, typing indicators and online presence using Socket.io, with message history kept in MongoDB.",
+    "category": "fullstack",
+    "glyph": "ws://",
+    "tags": ["Socket.io", "React", "Express", "MongoDB"],
+    "year": 2026,
+    "featured": true,
+    "links": { "live": "", "repo": "" }
+  },
+  {
+    "slug": "kanban-board",
+    "title": "Kanban Board",
+    "description": "Drag-and-drop task board with custom hooks, context + reducer state and localStorage persistence.",
+    "category": "frontend",
+    "glyph": "</>",
+    "tags": ["React", "Hooks", "Context", "DnD"],
+    "year": 2025,
+    "featured": false,
+    "links": { "live": "", "repo": "" }
+  },
+  {
+    "slug": "movie-finder",
+    "title": "Movie Finder",
+    "description": "React SPA with routing, debounced search, infinite scroll and skeleton loading on top of a public movie API.",
+    "category": "frontend",
+    "glyph": "useFx",
+    "tags": ["React Router", "Fetch", "Vite"],
+    "year": 2025,
+    "featured": false,
+    "links": { "live": "", "repo": "" }
+  },
+  {
+    "slug": "weather-now",
+    "title": "Weather Now",
+    "description": "Vanilla JavaScript weather app using async/await, the Geolocation API and dynamic DOM rendering. No frameworks.",
+    "category": "fundamentals",
+    "glyph": "{ js }",
+    "tags": ["JavaScript", "Fetch API", "Geolocation"],
+    "year": 2024,
+    "featured": false,
+    "links": { "live": "", "repo": "" }
+  },
+  {
+    "slug": "landing-page",
+    "title": "Responsive Landing Page",
+    "description": "Pixel-careful landing page in semantic HTML and modern CSS: Grid, Flexbox, fluid type with clamp() and an accessible nav.",
+    "category": "fundamentals",
+    "glyph": "<html/>",
+    "tags": ["HTML5", "CSS Grid", "Accessibility"],
+    "year": 2024,
+    "featured": false,
+    "links": { "live": "", "repo": "" }
+  }
+]
