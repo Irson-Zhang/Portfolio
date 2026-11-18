@@ -18,6 +18,8 @@ export default function Projects() {
   const [filter, setFilter] = useState('all');
 
   useEffect(() => {
+    // Opened as a standalone HTML file (npm run build:html): there's no API to ask.
+    if (window.location.protocol === 'file:') return;
     const ctrl = new AbortController();
     fetch('/api/projects', { signal: ctrl.signal })
       .then((r) => (r.ok ? r.json() : Promise.reject(new Error(r.status))))

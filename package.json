@@ -10,6 +10,7 @@
   "scripts": {
     "dev": "concurrently -n server,client -c blue,magenta \"npm run dev -w server\" \"npm run dev -w client\"",
     "build": "npm run build -w client",
+    "build:html": "node scripts/build-html.mjs",
     "start": "NODE_ENV=production npm start -w server",
     "seed": "npm run seed -w server"
   },
